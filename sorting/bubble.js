@@ -6,16 +6,14 @@ let data = [ 5,7,2,4,3,6,1,9,8,0 ];
 
 function bubbleSort(items) {
   let len = items.length;
-
-  for (var i = 0; i < len; i++) {
-
-    for (var j = 0; j < len-i; j++) {
+  for (let i = 0; i < len; i++) {
+    for (let j = 0; j < len-i; j++) {
       if(items[j]>items[j+1]){
+        //ES6 Destructuring
         [items[j+1], items[j]] = [items[j],items[j+1]];
       }
     }
   }
-
   return items;
 }
 
