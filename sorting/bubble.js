@@ -2,7 +2,7 @@
   Bubble Sort
   Worst case performane O(n^2)
 */
-let data = [ 4,7,2,4,3,6,1,9,8,0 ];
+let data = [ 4,5,2,4,3,6,1,9,8,0 ];
 
 function bubbleSort(items) {
   let len = items.length;
